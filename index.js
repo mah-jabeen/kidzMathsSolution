@@ -6,7 +6,7 @@ var question = prompt(`What do you want?
 if (question === "a)Forward counting") {
   for (var i = 1; i <= 100; i += 10) {
     for (var j = i; j < i + 10; j++) {
-      document.write(" " + j + " ");
+      document.write("<center>"+ " " + j + " " + "</center>");
     }
     document.write("</br>");
   }
@@ -16,15 +16,16 @@ if (question === "a)Forward counting") {
   var tableOf = +prompt("Enter The Number ");
 
   for (var i = startFrom; i <= endFrom; i++) {
-    document.write(tableOf + "  X  " + i + " = " + tableOf * i + "</br>");
+    document.write("<center>" + tableOf + "  X  " + i + " = " + tableOf * i + "</br>" + "</center>");
   }
-} else if (question === "a)Backward counting") {
+
+} else if (question === "c)Backward counting") {
   for (var i = 100; i >= 1; i -= 10) {
     for (var j = i; j > i - 10; j--) {
-      document.write(" " + j + " ");
+        document.write("<center>"+ " " + j + " " + "</center>");
     }
     document.write("</br>");
   }
 } else {
-  document.write(`Enter something from above`);
+  document.write(`<center> Enter something from above </center>`);
 }
